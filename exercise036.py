@@ -1,14 +1,14 @@
-house = float(input('Valor da casa: U$'))
-salary = float(input('Salário do comprador: U$'))
-years = int(input('Quantos anos de financiamento? '))
+house = float(input('House value: U$'))
+salary = float(input("Buyer's salary: U$"))
+years = int(input('How many years of financing? '))
 installments = house / (years * 12)
 minimum = (salary * 30) / 100
 
-print('Para pagar uma casa de U${:.2f} em {} anos'.format(
+print('To pay for a U${:.2f} house in {} years'.format(
     house, years), end='')
-print(' a prestação será de U${:.2f}'.format(installments))
+print(' the installment will be U${:.2f}'.format(installments))
 
 if installments <= minimum:
-    print('Empréstimo pode ser concedido!')
+    print('Loan can be granted!')
 else:
-    print('Empréstimo negado!')
+    print('Loan denied!')

@@ -5,7 +5,7 @@ nameold = ''
 totalwoman = 0
 
 for p in range(1, 5):
-    print('----- {} PESSOA -----'.format(p))
+    print('----- {} PEOPLE -----'.format(p))
     name = str(input('Name: ')).strip()
     age = int(input('Age: '))
     gender = str(input('Gender [M/F]: ')).strip()
@@ -21,6 +21,6 @@ for p in range(1, 5):
 
 averageage = sumage / 4
 
-print('A média de idade do grupo é de {} anos.'.format(averageage))
-print('O homem mais velho tem {} anos e se chama {}.'.format(bageman, nameold))
-print('Ao todo são {} mulheres com menos de 20 anos.'.format(totalwoman))
+print('The average age of the group is {} years.'.format(averageage))
+print('The oldest man is {} years old and his name is {}.'.format(bageman, nameold))
+print('Altogether there are {} women under 20 years old.'.format(totalwoman))

@@ -26,5 +26,4 @@ print(f'The lowest value entered was {smaller} in positions ', end='')
 for i, v in enumerate(listnum):
     if v == smaller:
         print(f'{i}... ', end='')
-
 print()

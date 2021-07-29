@@ -1,38 +1,36 @@
-def notas(*args, situacao=False):
+def grades(*args, situation=False):
     infos = dict()
-    maior = menor = soma = media = 0
+    higher = smaller = sum = 0
     infos['total'] = len(args)
 
-    for nota in args:
-        if nota == 0:
-            maior = nota
-        if nota > maior:
-            maior = nota
-    infos['maior'] = maior
+    for note in args:
+        if note == 0:
+            higher = note
+        if note > higher:
+            higher = note
+    infos['higher'] = higher
 
-    for nota in args:
-        menor = nota
-        if nota < menor:
-            menor = nota
-    infos['menor'] = menor
+    for note in args:
+        smaller = note
+        if note < smaller:
+            smaller = note
+    infos['smaller'] = smaller
 
-    for nota in args:
-        soma += nota
-    infos['media'] = soma/infos['total']
+    for note in args:
+        sum += note
+    infos['avegare'] = sum/infos['total']
 
-    if situacao:
-        if infos['media'] < 6:
-            infos['situacao'] = "BAD"
-        elif infos['media'] <= 7:
-            infos['situacao'] = "GOOD"
-        elif infos['media'] >= 9:
-            infos['situacao'] = "EXCELLENT"
+    if situation:
+        if infos['average'] < 6:
+            infos['situation'] = "BAD"
+        elif infos['average'] <= 7:
+            infos['situation'] = "GOOD"
+        elif infos['average'] >= 9:
+            infos['situation'] = "EXCELLENT"
     else:
         pass
     return infos
 
 
-resp = notas(5.5, 2.5, 1.5, situacao=True)
+resp = grades(5.5, 2.5, 1.5, situation=True)
 print(resp)
-
-# code ref https://github.com/guilherme-learning-center/Curso-Python-Gustavo-Guanabara/blob/master/mundo_3/aula_21/desafio_105.py

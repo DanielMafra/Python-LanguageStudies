@@ -32,5 +32,5 @@ def grades(*args, situation=False):
     return infos
 
 
-resp = grades(5.5, 2.5, 1.5, situation=True)
-print(resp)
+ans = grades(5.5, 2.5, 1.5, situation=True)
+print(ans)

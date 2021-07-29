@@ -1,28 +1,26 @@
 from time import sleep
 
 
-def escreva(texto):
-    tamanho = len(texto) + 4
-    print("~" * tamanho)
-    print(f"  {texto}")
-    print("~" * tamanho)
+def write(txt):
+    tam = len(txt) + 4
+    print("~" * tam)
+    print(f"  {txt}")
+    print("~" * tam)
 
 
-def pyhelp(comando):
-    help(comando)
+def pyhelp(comand):
+    help(comand)
 
 
-def default_loop():
+def default():
     while True:
-        escreva("Helper system PyHELP")
-        funcao_ou_lib = input("Function or Lib > ")
+        write("Helper system PyHELP")
+        funcorlib = input("Function or Lib > ")
 
-        if funcao_ou_lib[0].lower() == "f":
+        if funcorlib[0].lower() == "f":
             break
         else:
-            pyhelp(funcao_ou_lib)
+            pyhelp(funcorlib)
 
 
-default_loop()
-
-# code ref https://github.com/guilherme-learning-center/Curso-Python-Gustavo-Guanabara/blob/master/mundo_3/aula_21/desafio_106.py
+default()
